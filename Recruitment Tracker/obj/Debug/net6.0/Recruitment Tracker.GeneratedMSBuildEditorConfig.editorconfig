@@ -1,0 +1,93 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Recruitment_Tracker
+build_property.RootNamespace = Recruitment_Tracker
+build_property.ProjectDir = D:\PBL SEMESTER 4\Recruitment Tracker\Recruitment Tracker\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\PBL SEMESTER 4\Recruitment Tracker\Recruitment Tracker
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/PBL SEMESTER 4/Recruitment Tracker/Recruitment Tracker/Views/FolderAdmin/adminDetail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9sZGVyQWRtaW5cYWRtaW5EZXRhaWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/PBL SEMESTER 4/Recruitment Tracker/Recruitment Tracker/Views/FolderAdmin/AdminIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9sZGVyQWRtaW5cQWRtaW5JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/PBL SEMESTER 4/Recruitment Tracker/Recruitment Tracker/Views/FolderAdmin/AnnouncmentAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9sZGVyQWRtaW5cQW5ub3VuY21lbnRBZG1pbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/PBL SEMESTER 4/Recruitment Tracker/Recruitment Tracker/Views/FolderUser/AnnouncmentAppclient.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9sZGVyVXNlclxBbm5vdW5jbWVudEFwcGNsaWVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/PBL SEMESTER 4/Recruitment Tracker/Recruitment Tracker/Views/FolderUser/appclientDetail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9sZGVyVXNlclxhcHBjbGllbnREZXRhaWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/PBL SEMESTER 4/Recruitment Tracker/Recruitment Tracker/Views/FolderUser/AppclientIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9sZGVyVXNlclxBcHBjbGllbnRJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/PBL SEMESTER 4/Recruitment Tracker/Recruitment Tracker/Views/FolderUser/RegistrationAppclient.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9sZGVyVXNlclxSZWdpc3RyYXRpb25BcHBjbGllbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/PBL SEMESTER 4/Recruitment Tracker/Recruitment Tracker/Views/Home/Announcment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBbm5vdW5jbWVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/PBL SEMESTER 4/Recruitment Tracker/Recruitment Tracker/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/PBL SEMESTER 4/Recruitment Tracker/Recruitment Tracker/Views/Home/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/PBL SEMESTER 4/Recruitment Tracker/Recruitment Tracker/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/PBL SEMESTER 4/Recruitment Tracker/Recruitment Tracker/Views/Home/RegistrasiAccount.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSZWdpc3RyYXNpQWNjb3VudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/PBL SEMESTER 4/Recruitment Tracker/Recruitment Tracker/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/PBL SEMESTER 4/Recruitment Tracker/Recruitment Tracker/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/PBL SEMESTER 4/Recruitment Tracker/Recruitment Tracker/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/PBL SEMESTER 4/Recruitment Tracker/Recruitment Tracker/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/PBL SEMESTER 4/Recruitment Tracker/Recruitment Tracker/Views/FolderAdmin/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9sZGVyQWRtaW5cX0xheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-y9gbirvu3f
+
+[D:/PBL SEMESTER 4/Recruitment Tracker/Recruitment Tracker/Views/FolderUser/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9sZGVyVXNlclxfTGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = b-ljs1hy16sh
+
+[D:/PBL SEMESTER 4/Recruitment Tracker/Recruitment Tracker/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-hkce0u5ab3

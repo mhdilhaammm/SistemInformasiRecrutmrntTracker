@@ -1,0 +1,259 @@
+﻿@model Recruitment_Tracker.Models.Registration
+@{
+    Layout = "";
+}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+    <link href="~/assets/vendor/animate.css/animate.min.css" rel="stylesheet" />
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="~/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="~/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="~/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="~/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="~/assets/css/style.css" rel="stylesheet" />
+
+    <!-- Bootstrap -->
+    <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Font Awesome -->
+    <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="~/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <!-- NProgress -->
+    <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
+
+    <!-- Custom Theme Style -->
+    <link href="../build/css/custom.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header id="header" class="d-flex align-items-center">
+        <div class="container d-flex align-items-center">
+
+            @*            <h1 class="logo me-auto"><a href="index.html">PT.Exelitas</a></h1>*@
+
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <a href="#" class="logo me-auto"><img src="~/assets/img/excelitas-logo.png" alt="" class="img-fluid" style="width: 150px;"></a>
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a class="nav-link scrollto active" href="/FolderUser/AppclientIndex">Home</a></li>
+                    <li><a class="nav-link scrollto" href="/FolderUser/RegistrationAppclient">Registration</a></li>
+                    <li><a class="nav-link scrollto" href="/FolderUser/AnnouncmentAppclient">Announcment</a></li>
+                    <li class="nav-item dorpdown open">
+                        <a class="nav-link scrollto active" href="javascript:;" aria-haspopup="true" id="navbarDropdown" data-toggle="dropdown" aria-expanded="false">
+                            <svg width="34" height="34" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                            </svg>
+                        </a>
+                        <div class="dropdown-menu dropdown-usermenu pull-right" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="../Home/Logout">
+                                <button class="dropdown-item"><i class="fa fa-sign-out pull-right"></i> Log Out</button>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav><!-- .navbar -->
+
+        </div>
+    </header><!-- End Header -->
+    <!--Formulir Registration-->
+
+    <div class="title_left">
+        <center><h3>Form Validation</h3></center>
+    </div>
+    </div>
+    <div class="clearfix"></div>
+
+    <div class="container">
+        <div class="x_title">
+            <div class="clearfix"></div>
+        </div>
+        <div class="x_content">
+            @using (Html.BeginForm("RegistrationAppclient", "FolderUser", FormMethod.Post, new { enctype = "multipart/form-data" }))
+            {
+                <form>
+                    <div class="field item form-group">
+                        <label class="col-form-label col-md-3 col-sm-3  label-align">Nama<span class="required"></span></label>
+                        @Html.TextBoxFor(registration=>registration.Nama,new{@class="form-control"})
+                        @* <div class="col-md-6 col-sm-6">
+                    <input class="form-control" data-validate-length-range="6" data-validate-words="2" name="name" placeholder="ex. John f. Kennedy" required="required" />
+                    </div>*@
+                    </div>
+                    <div class="field item form-group">
+                        <label class="col-form-label col-md-3 col-sm-3  label-align">NIK<span class="required"></span></label>
+                        @Html.TextBoxFor(registration=>registration.Nik,new{@class="form-control"})
+                        @* <div class="col-md-6 col-sm-6">
+                    <input class="form-control" class='optional' name="tanggal" data-validate-length-range="5,15" type="text" />
+                    </div>*@
+                    </div>
+                    @*
+                <div class="field item form-group">
+                <label class="col-form-label col-md-3 col-sm-3  label-align">No.KK<span class="required"></span></label>
+                <div class="col-md-6 col-sm-6">
+                <input class="form-control" class='optional' name="tanggal" data-validate-length-range="5,15" type="text" />
+                </div>
+                </div>*@
+                    <div class="field item form-group">
+                        <label class="col-form-label col-md-3 col-sm-3  label-align">Tempat Lahir<span class="required"></span></label>
+                        @Html.TextBoxFor(registration=>registration.TempatLahir,new{@class="form-control"})
+                        <label class="col-form-label col-md-3 col-sm-3  label-align">Tanggal Lahir<span class="required"></span></label>
+                        @Html.TextBoxFor(registration=>registration.TanggalLahir,new{@class="form-control datepicker", @type="datetime-local"})
+                        @*<div class="col-md-6 col-sm-6">
+                    <input class="form-control" class='date' type="date" name="date" required='required'>
+                    </div>*@
+                    </div>
+                    <div class="field item form-group">
+                        <label class="col-form-label col-md-3 col-sm-3  label-align">Alamat<span class="required"></span></label>
+                        @Html.TextBoxFor(registration=>registration.Alamat,new{@class="form-control"})
+                        @*<div class="col-md-6 col-sm-6">
+                    <input class="form-control" name="email" class='email' required="required" type="email" />
+                    </div>*@
+                    </div>
+                    <div class="field item form-group">
+                        <label class="col-form-label col-md-3 col-sm-3  label-align">No.Handphone<span class="required"></span></label>
+                        @Html.TextBoxFor(registration=>registration.Phone,new{@class="form-control"})
+                        @*<div class="col-md-6 col-sm-6">
+                    <input class="form-control" type="email" class='email' name="no.hp" data-validate-linked='email' required='required' />
+                    </div>*@
+                    </div>
+                    <div class="field item form-group">
+                        <label class="col-form-label col-md-3 col-sm-3  label-align">Email<span class="required"></span></label>
+                        @Html.TextBoxFor(registration=>registration.Email,new{@class="form-control"})
+                        @*<div class="col-md-6 col-sm-6">
+                    <input class="form-control" type="number" class='number' name="number" data-validate-minmax="10,100" required='required'>
+                    </div>*@
+                    </div>
+                    <div class="item form-group">
+                        <label class="col-form-label col-md-3 col-sm-3 label-align">Jenis Kelamin</label>
+                        @Html.TextBoxFor(registration=>registration.Gender,new{@class="form-control"})
+                        @* <div class="col-md-6 col-sm-6 ">
+                    <div id="gender" class="btn-group" data-toggle="buttons">
+                    <label class="btn btn-secondary" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
+                    <input type="radio" name="gender" value="male" class="join-btn"> &nbsp; Male &nbsp;
+                    </label>
+                    <label class="btn btn-primary" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
+                    <input type="radio" name="gender" value="female" class="join-btn"> Female
+                    </label>
+                    </div>
+                    </div>*@
+                    </div>
+                    <div class="field item form-group">
+                        <label class="col-form-label col-md-3 col-sm-3  label-align">Agama<span class="required"></span></label>
+                        @Html.TextBoxFor(registration=>registration.Agama,new{@class="form-control"})
+                    </div>
+                    @*<div class="col-md-6 col-sm-6 ">]
+                <select class="form-control">
+                <option>Islam</option>
+                <option>Kristen</option>
+                <option>Hindu</option>
+                <option>Budha</option>
+                <option>Kong ho chu</option>
+                <option>dll</option>
+                </select>
+                </div>*@
+
+                    <br />
+                    @* <div class="field item form-group">
+                <label class="col-form-label col-md-3 col-sm-3  label-align">Status Perkawina<span class="required"></span></label>
+                @Html.TextBoxFor(registration=>registration.,new{@class="form-control"})
+                @*<div class="col-md-6 col-sm-6 ">
+                <div class="checkbox">
+                <label>
+                <input type="checkbox" class="flat" checked="checked">Belum Menikah
+                </label>
+                </div>
+                <div class="checkbox">
+                <label>
+                <input type="checkbox" class="flat">Sudah Menikah
+                </label>
+                </div>
+                </div>*@
+                    <div class="field item form-group">
+                        <label class="col-form-label col-md-3 col-sm-3  label-align">Pendidikan Terakhir<span class="required"></span></label>
+                        @Html.TextBoxFor(registration=>registration.Pendidikan,new{@class="form-control"})
+                        @*<div class="col-md-6 col-sm-6 ">
+                    <select class="form-control">
+                    <option>SMA</option>
+                    <option>SMK</option>
+                    <option>Diploma</option>
+                    <option>Sarjana</option>
+                    <option>Magister</option>
+                    <option>Porfesor</option>
+                    </select>*@
+                    </div>
+                    <br />
+                    <div class="form-group">
+                        <div class="col-md-6 offset-md-3">
+                            <button type='submit' class="btn btn-primary">Submit</button>
+                            <button type='reset' class="btn btn-secondary">Reset</button>
+                        </div>
+                    </div>
+                </form>
+            }
+        </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="../vendors/validator/multifield.js"></script>
+    <script src="~/vendors/validator/multifield.js"></script>
+    <script src="../vendors/validator/validator.js"></script>
+    <script src="~/vendors/validator/validator.js"></script>
+
+    <!-- jQuery -->
+    <script src="../vendors/jquery/dist/jquery.min.js"></script>
+    <script src="~/vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="../vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/vendors/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="~/vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>cript>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+    <!-- FastClick -->
+    <script src="../vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="../vendors/nprogress/nprogress.js"></script>
+    <!-- validator -->
+    <
+    <script src="../vendors/validator/validator.js"></script>
+    <!-- Custom Theme Scripts -->
+    <script src="../build/js/custom.min.js"></script>
+    <!-- jQuery -->
+    <script src="../vendors/jquery/dist/jquery.min.js"></script>
+    <script src="~/vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="../vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
